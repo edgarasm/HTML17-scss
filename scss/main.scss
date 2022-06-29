@@ -1,0 +1,38 @@
+// Kintamieji
+$main-color: #e26a24;
+$main-text-color: #777;
+$main-bg-color: snow;
+
+@import "reset";
+@import "btn";
+
+// nesting
+h1 {
+  color: $main-color;
+}
+
+.card {
+  display: inline-block;
+  border: 1px solid $main-color;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2rem;
+  background-color: $main-bg-color;
+
+  .card__title {
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: normal;
+  }
+
+  .card__text {
+    color: $main-text-color;
+    line-height: 1.5;
+  }
+
+  // & === .card
+  &.card--dark {
+    color: $main-bg-color;
+    background-color: #333;
+  }
+}

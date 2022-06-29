@@ -1,30 +1,94 @@
-@import "reset.css";
-@import "vars.css";
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ededed;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
 .btn {
-  background-color: var(--main-color);
-  color: black;
   border: none;
-  padding: 0.5rem;
-  border-radius: 5px;
+  color: #fff;
+  padding: 0.8em 1.6em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn.btn--main {
+  background-color: #e26a24;
+}
+.btn.btn--success {
+  background-color: #4caf50;
 }
 .btn:hover {
-  background-color: tomato;
-  color: var(--main-text-color);
+  background-color: #f56511;
 }
-.btn-main {
+
+.btn.btn--secondary {
+  background-color: #e7e7e7;
+  color: #333;
+}
+
+.btn.btn--success {
+  background-color: #4caf50;
+}
+
+.btn.btn--danger {
+  background-color: #f44336;
+}
+
+h1 {
+  color: #e26a24;
 }
 
 .card {
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid #e26a24;
   border-radius: 5px;
-  background-color: var(--main-bg-color);
-  padding: 2rem;
   text-align: center;
+  padding: 2rem;
+  background-color: snow;
+}
+.card .card__title {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: normal;
+}
+.card .card__text {
+  color: #777;
+  line-height: 1.5;
 }
 .card.card--dark {
-  color: var(--main-bg-color);
+  color: snow;
   background-color: #333;
-}
+}/*# sourceMappingURL=main.css.map */
